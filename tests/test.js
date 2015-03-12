@@ -37,12 +37,16 @@ suite('test project', function() {
 		assert.deepEqual(this.testClass.string2Array('Mark,Anthony,marka@lib.d'), ['Mark', 'Anthony', 'marka@lib.d']);
 	});
 
-	test('2.1 - 211,22,35/n10,20,33', function() {
+	test('2.1 - 211,22,35\n10,20,33', function() {
 		assert.deepEqual(this.testClass.multiString2Array('211,22,35\n10,20,33'), [['211','22','35'],['10','20','33']]);
 	});
 
 	test('2.2 - luxembourg,kennedy,44\nbudapest,expo ter,5-7\ngyors,fo utca,9', function() {
 		assert.deepEqual(this.testClass.multiString2Array('luxembourg,kennedy,44\nbudapest,expo ter,5-7\ngyors,fo utca,9'), [['luxembourg','kennedy','44'],['budapest','expo ter','5-7'],['gyors','fo utca','9']]);
+	});
+
+	test('2.2 - 1\n2,2\n3,3,3', function() {
+		assert.deepEqual(this.testClass.multiString2Array('1\n2,2\n3,3,3'), [['1'],['2','2'],['3','3','3']]);
 	});
 
 
