@@ -21,6 +21,10 @@ suite('test project', function() {
 		assert.isFalse(this.testClass.isString(['1', 2]));
 	});
 
+	test('1.4 - result is array', function() {
+		assert.isTrue(Array.isArray(this.testClass.string2Array('s')));
+	});
+
 	teardown(function() {
 	});
 });

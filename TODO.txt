@@ -3,5 +3,6 @@
 1 - Create a test case which test: is String?
 1 - Create isString method
 1 - Create a test case which test: is not string?
-0 - Create a test case which test: got string return array
-0 - Create stringToArray method
+1 - Create a test case which test: got string return array
+1 - Create stringToArray method
+0 - Create test case: "a,b,c"
