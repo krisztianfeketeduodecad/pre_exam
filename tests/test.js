@@ -29,6 +29,10 @@ suite('test project', function() {
 		assert.deepEqual(this.testClass.string2Array('a,b,c') ['a', 'b', 'c']);
 	});
 
+	test('1.6 - 100,982,444,990,1', function() {
+		assert.deepEqual(this.testClass.string2Array('100,982,444,990,1') ['100', '982', '444', '990', '1']);
+	});
+
 	teardown(function() {
 	});
 });

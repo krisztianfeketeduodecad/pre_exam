@@ -5,4 +5,6 @@
 1 - Create a test case which test: is not string?
 1 - Create a test case which test: got string return array
 1 - Create stringToArray method
-0 - Create test case: "a,b,c"
+1 - Create test case: "a,b,c"
+1 - Create test case: "100,982,444,990,1"
+0 - Create test case: "Mark,Anthony,marka@lib.de"
