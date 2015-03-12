@@ -41,6 +41,11 @@ suite('test project', function() {
 		assert.deepEqual(this.testClass.multiString2Array('211,22,35\n10,20,33'), [['211','22','35'],['10','20','33']]);
 	});
 
+	test('2.2 - luxembourg,kennedy,44\nbudapest,expo ter,5-7\ngyors,fo utca,9', function() {
+		assert.deepEqual(this.testClass.multiString2Array('luxembourg,kennedy,44\nbudapest,expo ter,5-7\ngyors,fo utca,9'), [['luxembourg','kennedy','44'],['budapest','expo ter','5-7'],['gyors','fo utca','9']]);
+	});
+
+
 	teardown(function() {
 	});
 });

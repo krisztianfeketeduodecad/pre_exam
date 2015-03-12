@@ -10,3 +10,4 @@
 1 - Create test case: "Mark,Anthony,marka@lib.de"
 1 - Create test case: "211,22,35/n10,20,33"
 1 - Create multiString2Array method
+1 - Create test case: "luxembourg,kennedy,44\nbudapest,expo ter,5-7\ngyors,fo utca,9"
