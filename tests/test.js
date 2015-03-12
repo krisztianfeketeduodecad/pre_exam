@@ -26,15 +26,19 @@ suite('test project', function() {
 	});
 
 	test('1.5 - a,b,c', function() {
-		assert.deepEqual(this.testClass.string2Array('a,b,c') ['a', 'b', 'c']);
+		assert.deepEqual(this.testClass.string2Array('a,b,c'), ['a', 'b', 'c']);
 	});
 
 	test('1.6 - 100,982,444,990,1', function() {
-		assert.deepEqual(this.testClass.string2Array('100,982,444,990,1') ['100', '982', '444', '990', '1']);
+		assert.deepEqual(this.testClass.string2Array('100,982,444,990,1'), ['100', '982', '444', '990', '1']);
 	});
 
 	test('1.7 - Mark,Anthony,marka@lib.d', function() {
-		assert.deepEqual(this.testClass.string2Array('Mark,Anthony,marka@lib.d') ['Mark', 'Anthony', 'marka@lib.d']);
+		assert.deepEqual(this.testClass.string2Array('Mark,Anthony,marka@lib.d'), ['Mark', 'Anthony', 'marka@lib.d']);
+	});
+
+	test('2.1 - 211,22,35/n10,20,33', function() {
+		assert.deepEqual(this.testClass.multiString2Array('211,22,35\n10,20,33'), [['211','22','35'],['10','20','33']]);
 	});
 
 	teardown(function() {

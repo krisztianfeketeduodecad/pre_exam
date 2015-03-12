@@ -8,3 +8,5 @@
 1 - Create test case: "a,b,c"
 1 - Create test case: "100,982,444,990,1"
 1 - Create test case: "Mark,Anthony,marka@lib.de"
+1 - Create test case: "211,22,35/n10,20,33"
+1 - Create multiString2Array method
