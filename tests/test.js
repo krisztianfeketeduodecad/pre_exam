@@ -25,6 +25,10 @@ suite('test project', function() {
 		assert.isTrue(Array.isArray(this.testClass.string2Array('s')));
 	});
 
+	test('1.5 - a,b,c', function() {
+		assert.deepEqual(this.testClass.string2Array('a,b,c') ['a', 'b', 'c']);
+	});
+
 	teardown(function() {
 	});
 });

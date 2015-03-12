@@ -8,8 +8,7 @@ var TestClass = function() {
 };
 
 TestClass.prototype.string2Array = function(input) {
-	var result = ["a"];
-
+	var result = input.split();
 	return result;
 };
 
