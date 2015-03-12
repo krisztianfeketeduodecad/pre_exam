@@ -8,7 +8,13 @@
 1 - Create test case: "a,b,c"
 1 - Create test case: "100,982,444,990,1"
 1 - Create test case: "Mark,Anthony,marka@lib.de"
+1 - Read task 2.
 1 - Create test case: "211,22,35/n10,20,33"
 1 - Create multiString2Array method
 1 - Create test case: "luxembourg,kennedy,44\nbudapest,expo ter,5-7\ngyors,fo utca,9"
 1 - Create test case: "1\n2,2\n3,3,3"
+1 - Read task 3.
+1 - Change every test case to the same method.
+1 - Create a new method which now give back Objects instead of Array.
+1 - Create test case: "#useFirstLineAsLabels\nName,Email,Phone\nMark,marc@be.com,998\nNoemi,noemi@ac.co.uk,888"
+1 -
