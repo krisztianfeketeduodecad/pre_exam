@@ -9,8 +9,16 @@ suite('test project', function() {
 		this.testClass = new TestClass();
 	});
 
-	test('1.1 - only string', function() {
+	test('1.1 - is string', function() {
 		assert.isTrue(this.testClass.isString('s'));
+	});
+
+	test('1.2 - not string', function() {
+		assert.isFalse(this.testClass.isString(1.2));
+	});
+
+	test('1.3 - not string', function() {
+		assert.isFalse(this.testClass.isString(['1', 2]));
 	});
 
 	teardown(function() {

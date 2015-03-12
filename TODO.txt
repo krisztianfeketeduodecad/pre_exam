@@ -2,6 +2,6 @@
 1 - Read task 1.
 1 - Create a test case which test: is String?
 1 - Create isString method
-0 - Create a test case which test: is not string?
+1 - Create a test case which test: is not string?
 0 - Create a test case which test: got string return array
 0 - Create stringToArray method
