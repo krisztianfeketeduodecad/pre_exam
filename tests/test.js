@@ -9,10 +9,8 @@ suite('test project', function() {
 		this.testClass = new TestClass();
 	});
 
-	test('test runs', function() {
-		this.testClass.test();
-		this.clock.tick(1000);
-		assert.strictEqual(this.testClass.a, 1);
+	test('1.1 - only string', function() {
+		assert.isTrue(this.testClass.isString('s'));
 	});
 
 	teardown(function() {
