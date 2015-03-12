@@ -15,6 +15,16 @@
 1 - Create test case: "1\n2,2\n3,3,3"
 1 - Read task 3.
 1 - Change every test case to the same method.
-1 - Create a new method which now give back Objects instead of Array.
+1 - Create a new method which now give back Objects instead of Array - multiString2ArrayObject.
 1 - Create test case: "#useFirstLineAsLabels\nName,Email,Phone\nMark,marc@be.com,998\nNoemi,noemi@ac.co.uk,888"
-1 -
+1 - Read task 4.
+1 - Create FirstLine parser test case : #useFirstLineAsLabels=1&columnDelimiter=,&lineDelimiter=%0A
+1 - Create storing parameters.
+1 - Create parseFirstLine method.
+0 - Create test case to multiString2ArrayObject with firstLine usage
+0 - Implemente into multiString2ArrayObject to use parseFirstLine
+...
+0 - Read task 5.
+...
+0 - Finish
+0 - Pass the exam :)

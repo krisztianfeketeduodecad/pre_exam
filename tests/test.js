@@ -54,6 +54,15 @@ suite('test project', function() {
 		{'labels': ['Name', 'Email', 'Phone'], 'data': [['Mark','marc@be.com','998'], ['Noemi','noemi@ac.co.uk','888']]});
 	});
 
+	test('4.1 - #useFirstLineAsLabels=1&columnDelimiter=,&lineDelimiter=%0A', function() {
+		this.testClass.parseFirstLine('#useFirstLineAsLabels=1&columnDelimiter=,&lineDelimiter=%0A')
+		assert.isTrue(this.testClass.useFirstLineAsLabels);
+		assert.isTrue(this.testClass.lineDelimeter == '%0A');
+		assert.isTrue(this.testClass.columnDelimeter == ',');
+	});
+
+
+
 
 	teardown(function() {
 	});

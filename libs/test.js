@@ -4,7 +4,9 @@
  * @constructor
  */
 var TestClass = function() {
-	this.a = 0;
+	this.useFirstLineAsLabels = false;
+	this.lineDelimeter = '\n';
+	this.columnDelimeter = ',';
 };
 
 TestClass.prototype.multiString2ArrayObject = function(input) {
@@ -25,6 +27,17 @@ TestClass.prototype.multiString2ArrayObject = function(input) {
 	}
 	return result;
 };
+
+TestClass.prototype.parseFirstLine = function(input) {
+	if (input[0] == '#') {
+		var result = /#useFirstLineAsLabels=([0|1])&columnDelimiter=(.)&lineDelimiter=(.*)/.exec(input);
+		if (result) {
+			this.useFirstLineAsLabels = !!result[1];
+			this.columnDelimeter = result[2];
+			this.lineDelimeter = result[3];
+		}
+	}
+}
 
 TestClass.prototype.multiString2Array = function(input) {
 	var result;
