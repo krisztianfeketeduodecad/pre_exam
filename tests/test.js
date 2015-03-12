@@ -33,6 +33,10 @@ suite('test project', function() {
 		assert.deepEqual(this.testClass.string2Array('100,982,444,990,1') ['100', '982', '444', '990', '1']);
 	});
 
+	test('1.7 - Mark,Anthony,marka@lib.d', function() {
+		assert.deepEqual(this.testClass.string2Array('Mark,Anthony,marka@lib.d') ['Mark', 'Anthony', 'marka@lib.d']);
+	});
+
 	teardown(function() {
 	});
 });
